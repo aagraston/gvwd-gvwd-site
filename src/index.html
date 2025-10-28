@@ -1,14 +1,15 @@
 ---
-layout: 'base.html'
-description: 'Meta description for the page'
-metaTitle: 'Title that shows up on google searches'
-tagTitle: 'Pixel Perfect Websites'
-preloadCSS: '/css/home.css'
-permalink: '/'
+layout: "base.html"
+description: "Meta description for the page"
+metaTitle: "Title that shows up on google searches"
+tagTitle: "Hand-Crafted Websites for Small Businesses"
+preloadCSS: "/css/home.css"
+permalink: "/"
 eleventyNavigation:
   key: Home
   order: 100
 ---
+
 <!-- Enter html code below -->
 
 <!-- ============================================ -->
@@ -16,55 +17,660 @@ eleventyNavigation:
 <!-- ============================================ -->
 
 <section id="hero">
-  <div class="cs-container">
+  <div class="container">
+    <div class="hero-section-left">
+      <h1>GOOD VALLEY WEB DESIGNS</h1>
+      <h2>
+        BEAUTIFUL, HIGHLY PERFORMANT WEBSITES FOR <span>SMALL BUSINESSES</span>
+      </h2>
+      <p>
+        Handcrafted websites that load instantly, look great on every device,
+        and help your business stand out online. No templates, no tech jargon or
+        bloat, just clean, custom designs made with care right here in Canada.
+      </p>
+      <div class="hero-buttons">
+        <a href="" class="button-solid"
+          >Get Started<img
+            class="arrow-icon"
+            loading="lazy"
+            decoding="async"
+            src="/assets/svgs/right-arrow-icon-black.svg"
+            alt="right arrow icon"
+            aria-hidden="true"
+        /></a>
+        <a href="" class="button-outline"
+          >About Us<img
+            class="arrow-icon"
+            loading="lazy"
+            decoding="async"
+            src="/assets/svgs/right-arrow-icon-black.svg"
+            alt="right arrow icon"
+            aria-hidden="true"
+        /></a>
+      </div>
+    </div>
+    <div class="hero-section-right">
+      {% image './src/images/gvwd/hero-laptop-phone.png', 'computer showing
+      website design', 'laptop', 'eager', '(max-width: 400px) 400px, (max-width:
+      850px) 850px, 1920px'%}
+    </div>
   </div>
 
   <!-- Background Image -->
-  {% image './src/images/gv-landing.jpg', 'mountains', 'cs-picture', 'eager', '(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px'%}
+  {% image './src/images/gvwd/hero-bg-pic.png', 'mountains', 'cs-picture',
+  'eager', '(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px'%}
 </section>
 
 <!-- ============================================ -->
-<!--                  Services                    -->
+<!--               Highlight Scroll               -->
 <!-- ============================================ -->
 
-<section id="services">
+<section id="highlight-scroll">
+  <div class="container">
+    <div class="scroll-container">
+      <div class="scroll-element">
+        <img
+          class="scroll-icon"
+          loading="lazy"
+          decoding="async"
+          src="/assets/svgs/sun-icon.svg"
+          alt="sun icon"
+          aria-hidden="true"
+        />
+        <p>Mobile First Design</p>
+      </div>
+
+      <div class="scroll-element">
+        <img
+          class="scroll-icon"
+          loading="lazy"
+          decoding="async"
+          src="/assets/svgs/sun-icon.svg"
+          alt="sun icon"
+          aria-hidden="true"
+        />
+        <p>Fully Responsive</p>
+      </div>
+
+      <div class="scroll-element">
+        <img
+          class="scroll-icon"
+          loading="lazy"
+          decoding="async"
+          src="/assets/svgs/sun-icon.svg"
+          alt="sun icon"
+          aria-hidden="true"
+        />
+        <p>Optimized Page Speed</p>
+      </div>
+
+      <div class="scroll-element">
+        <img
+          class="scroll-icon"
+          loading="lazy"
+          decoding="async"
+          src="/assets/svgs/sun-icon.svg"
+          alt="sun icon"
+          aria-hidden="true"
+        />
+        <p>Reporting & Analytics</p>
+      </div>
+
+      <div class="scroll-element">
+        <img
+          class="scroll-icon"
+          loading="lazy"
+          decoding="async"
+          src="/assets/svgs/sun-icon.svg"
+          alt="sun icon"
+          aria-hidden="true"
+        />
+        <p>Based in Canada</p>
+      </div>
+    </div>
+  </div>
 </section>
 
 <!-- ============================================ -->
-<!--                 Side By Side                 -->
+<!--               What We Offer                  -->
 <!-- ============================================ -->
 
-<section id="sbs">
+<section id="what-we-offer">
+  <div class="container">
+    <h2>WHAT WE OFFER</h2>
+    <h3>ONGOING CARE AND SUPPORT</h3>
+    <p>
+      At Good Valley, we believe a great website shouldn’t be left to fall apart
+      over time. Your website is <strong>NO COST DOWN</strong>, and we stick
+      with you for the long haul — keeping your website secure, up to date, and
+      performing at its best. We handle hosting, updates, security, and
+      performance reporting, so you can focus on running your business.
+    </p>
+
+    <div class="what-we-offer-grid">
+      <div class="card">
+        <img
+          class="card-icon"
+          loading="lazy"
+          decoding="async"
+          src="/assets/svgs/wrench-icon.svg"
+          alt="wrench icon"
+          aria-hidden="true"
+        />
+        <h4>We Build Your Site - For <strong>Free</strong></h4>
+        <p>
+          We start by designing and developing your custom website at no cost.
+          You get a fast, secure, professional site tailored to your business —
+          no hidden fees.
+        </p>
+        <a href="/contact"
+          >Get Started
+          <img
+            class="arrow-icon"
+            loading="lazy"
+            decoding="async"
+            src="/assets/svgs/right-arrow-icon-black.svg"
+            alt="right arrow icon"
+            aria-hidden="true"
+        /></a>
+      </div>
+
+      <div class="card">
+        <img
+          class="card-icon"
+          loading="lazy"
+          decoding="async"
+          src="/assets/svgs/cloud-icon.svg"
+          alt="cloud icon"
+          aria-hidden="true"
+        />
+        <h4>We Host & Manage Your Site</h4>
+        <p>
+          Once your site goes live, we take care of the hosting, performance,
+          and security. Everything is monitored and optimized so your website
+          stays fast, safe, and worry-free.
+        </p>
+        <a href="/contact"
+          >Get Started
+          <img
+            class="arrow-icon"
+            loading="lazy"
+            decoding="async"
+            src="/assets/svgs/right-arrow-icon-black.svg"
+            alt="right arrow icon"
+            aria-hidden="true"
+        /></a>
+      </div>
+
+      <div class="card">
+        <img
+          class="card-icon"
+          loading="lazy"
+          decoding="async"
+          src="/assets/svgs/update-icon.svg"
+          alt="update icon"
+          aria-hidden="true"
+        />
+        <h4>We Keep Your Site Updated</h4>
+        <p>
+          Need to add new content, swap out photos, or make design tweaks? Just
+          let us know. We handle updates and maintenance so your site always
+          looks fresh and works flawlessly.
+        </p>
+        <a href="/contact"
+          >Get Started
+          <img
+            class="arrow-icon"
+            loading="lazy"
+            decoding="async"
+            src="/assets/svgs/right-arrow-icon-black.svg"
+            alt="right arrow icon"
+            aria-hidden="true"
+        /></a>
+      </div>
+    </div>
+
+    <a href="/contact" class="button-solid">
+      Get Started<img
+        class="arrow-icon"
+        loading="lazy"
+        decoding="async"
+        src="/assets/svgs/right-arrow-icon-black.svg"
+        alt="right arrow icon"
+        aria-hidden="true"
+    /></a>
+  </div>
 </section>
 
 <!-- ============================================ -->
-<!--            Extra Content To Rank             -->
+<!--               Example Sites                  -->
 <!-- ============================================ -->
 
-<section id="sbs-r">
+<section id="example-sites">
+  <div class="container">
+    <div class="top-section">
+      <div class="left-side">
+        <h2>EXAMPLES</h2>
+        <h3>HAVE A POKE AROUND THESE SITE EXAMPLES</h3>
+      </div>
+      <div class="right-side">
+        <p>
+          Each site is hand-coded, fast, and designed to fit our client’s goals
+          and industry — no CMS bloat, no fluff, just clean, effective design
+          that performs. Whether you need a simple one-page site or a full
+          online presence, We will launch something beautiful, secure, and built
+          to last.
+        </p>
+        <a href="/contact" class="button-solid"
+          >Get Started<img
+            class="arrow-icon"
+            loading="lazy"
+            decoding="async"
+            src="/assets/svgs/right-arrow-icon-black.svg"
+            alt="right arrow icon"
+            aria-hidden="true"
+        /></a>
+      </div>
+    </div>
+    <div class="bottom-section">
+      <div class="card">
+        {% image './src/images/gvwd/eco-landscaping-example.png', 'example site
+        1', '', 'lazy', '(max-width: 400px) 400px, (max-width: 850px) 850px,
+        1920px'%}
+        <h4>ECO LANDSCAPING</h4>
+        <p>
+          This example site was built to showcase how a design might make it’s
+          way to a fully-responsive and mobile-friendly look, for a small
+          landscaping business.
+        </p>
+        <a
+          href="https://ecolandscaping.netlify.app"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Visit Site<img
+            class="arrow-icon"
+            loading="lazy"
+            decoding="async"
+            src="/assets/svgs/right-arrow-icon-white.svg"
+            alt="right arrow icon"
+            aria-hidden="true"
+        /></a>
+      </div>
+
+      <div class="card">
+        {% image './src/images/gvwd/town-and-country-example.png', 'example site
+        1', '', 'lazy', '(max-width: 400px) 400px, (max-width: 850px) 850px,
+        1920px'%}
+        <h4>TOWN AND COUNTRY CARPET & UPHOLSTERY CARE</h4>
+        <p>
+          This example site was built to showcase how a design might make it’s
+          way to a fully-responsive and mobile-friendly look, for a small
+          landscaping business.
+        </p>
+        <a
+          href="https://ecolandscaping.netlify.app"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Visit Site<img
+            class="arrow-icon"
+            loading="lazy"
+            decoding="async"
+            src="/assets/svgs/right-arrow-icon-white.svg"
+            alt="right arrow icon"
+            aria-hidden="true"
+        /></a>
+      </div>
+    </div>
+  </div>
 </section>
 
 <!-- ============================================ -->
-<!--             Final Call to Action             -->
+<!--                Built to Last                 -->
+<!-- ============================================ -->
+
+<section id="built-to-last">
+  <div class="container">
+    <h2>SMALL SITES WITH BIG IMPACT</h2>
+    <h3>BUILT TO LAST, MADE TO CONVERT</h3>
+    <div class="built-to-last-grid">
+      <div class="card">
+        <img
+          class="card-icon"
+          loading="lazy"
+          decoding="async"
+          src="/assets/svgs/partnership-icon.svg"
+          alt="partnership icon"
+          aria-hidden="true"
+        />
+        <h4>Partnership</h4>
+        <p>We stick with you long-term, keeping your site in top shape.</p>
+      </div>
+
+      <div class="card">
+        <img
+          class="card-icon"
+          loading="lazy"
+          decoding="async"
+          src="/assets/svgs/growth-icon.svg"
+          alt="growth icon"
+          aria-hidden="true"
+        />
+        <h4>Growth</h4>
+        <p>A fast, professional site that helps your business thrive.</p>
+      </div>
+
+      <div class="card">
+        <img
+          class="card-icon"
+          loading="lazy"
+          decoding="async"
+          src="/assets/svgs/quality-icon.svg"
+          alt="quality icon"
+          aria-hidden="true"
+        />
+        <h4>Quality</h4>
+        <p>Beautiful designs, clean, efficient code with no bloat.</p>
+      </div>
+
+      <div class="card">
+        <img
+          class="card-icon"
+          loading="lazy"
+          decoding="async"
+          src="/assets/svgs/performance-icon.svg"
+          alt="performance icon"
+          aria-hidden="true"
+        />
+        <h4>Performance</h4>
+        <p>Your site loads in a blink, every time.</p>
+      </div>
+    </div>
+    <a href="/contact" class="button-outline">
+      Get Started<img
+        class="arrow-icon"
+        loading="lazy"
+        decoding="async"
+        src="/assets/svgs/right-arrow-icon-black.svg"
+        alt="right arrow icon"
+        aria-hidden="true"
+    /></a>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!--                   Pricing                    -->
+<!-- ============================================ -->
+
+<section id="pricing">
+  <div class="container">
+    <div class="top-section">
+      <div class="left-side">
+        <h2>PRICING</h2>
+        <h3>PRICING PACKAGES TAILORED TO YOUR NEEDS</h3>
+      </div>
+
+      <div class="right-side">
+        <p>
+          When you choose an ongoing plan, you’re not just getting a website —
+          you’re gaining a dedicated web partner. With 24/7 technical support
+          and active site management, issues are caught before they become
+          problems, and improvements happen continuously. Your site stays fast,
+          secure, and up to date without you lifting a finger — so you can focus
+          on running your business while we keep your online presence performing
+          at its best.
+        </p>
+      </div>
+    </div>
+    <div class="bottom-section">
+      <div class="pricing-grid">
+        <div class="card">
+          <h2>One-Time</h2>
+          <h3>$3,800</h3>
+          <ul class="features-list">
+            <li class="feature-item included">
+              Custom Site Design & Development
+            </li>
+            <li class="feature-item included">Hosting 25$ /mo.</li>
+            <li class="feature-item included">Up to 5 Pages Included</li>
+            <li class="feature-item included">Additional Pages $100 ea.</li>
+            <li class="feature-item included">Unlimited edits +$50 /mo.</li>
+            <li class="feature-item included">Reporting +$50/mo.</li>
+            <li class="feature-item">Ongoing Management</li>
+            <li class="feature-item">24/7.</li>
+          </ul>
+          <a href="/contact" class="button-solid"
+            >Get Started<img
+              class="arrow-icon"
+              loading="lazy"
+              decoding="async"
+              src="/assets/svgs/right-arrow-icon-black.svg"
+              alt="right arrow icon"
+              aria-hidden="true"
+          /></a>
+        </div>
+
+        <div class="card">
+          <h2>Monthly</h2>
+          <h3>$200 <span>/mo.</span></h3>
+          <ul class="features-list">
+            <li class="feature-item included">
+              Custom Site Design & Development
+            </li>
+            <li class="feature-item included">Hosting 25$ /mo.</li>
+            <li class="feature-item included">Up to 5 Pages Included</li>
+            <li class="feature-item included">Additional Pages $100 ea.</li>
+            <li class="feature-item included">Unlimited edits +$50 /mo.</li>
+            <li class="feature-item included">Reporting +$50/mo.</li>
+            <li class="feature-item">Ongoing Management</li>
+            <li class="feature-item">24/7.</li>
+          </ul>
+          <a href="/contact" class="button-solid"
+            >Get Started<img
+              class="arrow-icon"
+              loading="lazy"
+              decoding="async"
+              src="/assets/svgs/right-arrow-icon-black.svg"
+              alt="right arrow icon"
+              aria-hidden="true"
+          /></a>
+        </div>
+
+        <div class="card">
+          <h2>Monthly + Reporting</h2>
+          <h3>$250 <span>/mo.</span></h3>
+          <ul class="features-list">
+            <li class="feature-item included">
+              Custom Site Design & Development
+            </li>
+            <li class="feature-item included">Hosting 25$ /mo.</li>
+            <li class="feature-item included">Up to 5 Pages Included</li>
+            <li class="feature-item included">Additional Pages $100 ea.</li>
+            <li class="feature-item included">Unlimited edits +$50 /mo.</li>
+            <li class="feature-item included">Reporting +$50/mo.</li>
+            <li class="feature-item">Ongoing Management</li>
+            <li class="feature-item">24/7.</li>
+          </ul>
+          <a href="/contact" class="button-solid"
+            >Get Started<img
+              class="arrow-icon"
+              loading="lazy"
+              decoding="async"
+              src="/assets/svgs/right-arrow-icon-black.svg"
+              alt="right arrow icon"
+              aria-hidden="true"
+          /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!--                Meet the Owner                -->
+<!-- ============================================ -->
+
+<section id="meet-the-owner">
+  <div class="container">
+    <div class="left-side">
+      {% image './src/images/gvwd/aaron-img.png', 'owner picture', '', 'lazy',
+      '(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px'%}
+      <p>Aaron Graston</p>
+      <p>Owner / Developer</p>
+    </div>
+
+    <div class="right-side">
+      <h2>MEET THE OWNER</h2>
+      <h3>WORK YOU CAN TRUST</h3>
+
+      <div class="stats-grid">
+        <div class="stat-item">
+          <img
+            class="stat-icon"
+            loading="lazy"
+            decoding="async"
+            src="/assets/svgs/mountains-icon.svg"
+            alt="mountain icon"
+            aria-hidden="true"
+          />
+          <h4>10+</h4>
+          <p>Years Experience</p>
+        </div>
+
+        <div class="stat-item">
+          <img
+            class="stat-icon"
+            loading="lazy"
+            decoding="async"
+            src="/assets/svgs/rocket-icon.svg"
+            alt="rocket icon"
+            aria-hidden="true"
+          />
+          <h4>75+</h4>
+          <p>Projects</p>
+        </div>
+
+        <div class="stat-item">
+          <img
+            class="stat-icon"
+            loading="lazy"
+            decoding="async"
+            src="/assets/svgs/thumb-icon.svg"
+            alt="thumb icon"
+            aria-hidden="true"
+          />
+          <h4>100%</h4>
+          <p>Satisfaction Guaranteed</p>
+        </div>
+      </div>
+
+      <p>
+        When you choose an ongoing plan, you’re not just getting a website —
+        you’re gaining a dedicated web partner. With 24/7 technical support and
+        active site management, issues are caught before they become problems,
+        and improvements happen continuously. Your site stays fast, secure, and
+        up to date without you lifting a finger — so you can focus on running
+        your business while we keep your online presence performing at its best.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!--                    Review                    -->
+<!-- ============================================ -->
+
+<section id="Review">
+  <div class="container">
+    <div class="star-grid">
+      <img
+        class="star-icon"
+        loading="lazy"
+        decoding="async"
+        src="/assets/svgs/star-icon.svg"
+        alt="star icon"
+        aria-hidden="true"
+      />
+      <img
+        class="star-icon"
+        loading="lazy"
+        decoding="async"
+        src="/assets/svgs/star-icon.svg"
+        alt="star icon"
+        aria-hidden="true"
+      />
+      <img
+        class="star-icon"
+        loading="lazy"
+        decoding="async"
+        src="/assets/svgs/star-icon.svg"
+        alt="star icon"
+        aria-hidden="true"
+      />
+      <img
+        class="star-icon"
+        loading="lazy"
+        decoding="async"
+        src="/assets/svgs/star-icon.svg"
+        alt="star icon"
+        aria-hidden="true"
+      />
+      <img
+        class="star-icon"
+        loading="lazy"
+        decoding="async"
+        src="/assets/svgs/star-icon.svg"
+        alt="star icon"
+        aria-hidden="true"
+      />
+    </div>
+    <p>
+      “Good Valley Web Design does Incredible work! Aaron came through with an
+      AMAZING site for us. We continue to reap the reward. The insights he
+      supplies are invaluable in helping to keep our business relevant in the
+      online space.”
+    </p>
+    <h4>- Roger S., Town & Country Carpet & Upholstery Care ltd</h4>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!--                    CTA                       -->
 <!-- ============================================ -->
 
 <section id="cta">
-  {% image './src/images/cabinets2.jpg', 'kitchen cabinets', '', 'lazy', '(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px'%}
+  <div class="container">
+    <h2>Let's Get Started On</h2>
+    <h3>Your New Website Today!</h3>
+    <a href="/contact" class="button-outline">
+      Get Started<img
+        class="arrow-icon"
+        loading="lazy"
+        decoding="async"
+        src="/assets/svgs/right-arrow-icon-yellow.svg"
+        alt="right arrow icon"
+        aria-hidden="true"
+      />
+    </a>
+    <img
+      class="sun-icon"
+      loading="lazy"
+      decoding="async"
+      src="/assets/svgs/sun-cta-icon.svg"
+      alt="sun icon"
+      aria-hidden="true"
+    />
+  </div>
 </section>
 
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <script>
   if (window.netlifyIdentity) {
-    window
-      .netlifyIdentity
-      .on('init', (user) => {
-        if (!user) {
-          window
-            .netlifyIdentity
-            .on('login', () => {
-              document.location.href = '/admin/';
-            });
-        }
-      });
+    window.netlifyIdentity.on("init", (user) => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
   }
 </script>

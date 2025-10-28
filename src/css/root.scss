@@ -103,40 +103,30 @@
         text-decoration: none;
         display: inline-block;
         width: auto;
-        line-height: calc(50 / 16 * 1rem);
-        height: calc(50 / 16 * 1rem);
+        border-radius: calc(8 / 16 * 1rem);
+        line-height: calc(40 / 16 * 1rem);
+        height: calc(40 / 16 * 1rem);
         text-align: center;
-        padding: 0 calc(30 / 16 * 1rem);
+        padding: 0 calc(20 / 16 * 1rem);
         position: relative;
         z-index: 1;
-        background-color: var(--primary);
+        font-weight: 700;
+        font-family: 'Sofia Sans', Arial, sans-serif;
+        background-color: var(--primaryAccent);
 
         // Transition Properties
         color: #000;
         transition: color .3s;
         transition-delay: .1s;
 
-        &:hover {
-            color: #fff;
-            &:before {
-                width: 100%;
-            }
-        }
-
-        &:before {
-            content: '';
-            position: absolute;
-            display: block;
-            height: 100%;
-            opacity: 1;
-            top: 0;
-            left: 0;
-            z-index: -1;
-            background-color: #000;
-
-            //Transition properties
-            width: 0;
-            transition: width .3s;
+        img {
+            display: inline-block;
+            margin-left: calc(8 / 16 * 1rem);
+            line-height: calc(40 / 16 * 1rem);
+            vertical-align: middle;
+            transform: translateY(-4%);
+            width: calc(20 / 16 * 1rem);
+            height: auto;
         }
     }
 
@@ -199,6 +189,9 @@
         .container {
             padding: calc(13 / 16 * 1rem) 0;
             width: 96%;
+            .get-started {
+                display: none;
+            }
         }
 
          // Logo
@@ -356,13 +349,13 @@
                     }
                     a {
                         text-decoration: none;
-                        text-transform: uppercase;
-                        color: #000;
-                        font-size: calc(19 / 16 * 1rem);
+                        color: var(--bodyTextColor);
+                        font-size: calc(16 / 16 * 1rem);
                         text-align: center;
                         display: inline-block;
                         position: relative;
-                        font-weight: bold;
+                        font-family: 'Sofia Sans', Arial, sans-serif;
+                        font-weight: 600;
 
                         // Active State
                         &.active {
@@ -491,7 +484,8 @@
             background-color: #fff;
 
             //transition properties
-            height: 0;
+            height: 100%;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
             transition: height .3s;
         }
 
@@ -499,14 +493,13 @@
             max-width: calc(1250 / 16 * 1rem);
             display: flex;
             // Forces all elements to the right
-            justify-content: flex-end;
+            justify-content: space-between;
             align-items: center;
         }
 
         // Logo
         .logo {
             // Margin-right: auto Pushes everything away from the right, nudging it to the left and pushing everyting to the right
-            margin-right: auto;
             height: calc(60 / 16 * 1rem);
             width: auto;
 
@@ -521,25 +514,28 @@
             ul {
                 padding: 0;
                 display: flex;
-                justify-content: flex-end;
+                justify-content: center;
                 align-items: center;
 
                 li {
                     list-style: none;
                     margin-left: calc(30 / 16 * 1rem);
                     padding-top: calc(3 / 16 * 1rem);
+                    &:first-child {
+                        margin-left: 0;
+                    }
 
                     a {
                         text-decoration: none;
-                        font-weight: bold;
+                        font-weight: 600;
                         /* 14px - 18px */
-                        font-size: clamp(.875rem, 1.5vw, 1.125rem);
-                        text-transform: uppercase;
+                        font-size: clamp(.7rem, 1.2vw, 1rem);
                         position: relative;
                         z-index: 1;
+                        font-family: 'Sofia Sans', Arial, sans-serif;
 
                         // Transiiton Properties
-                        color: #fff;
+                        color: var(--nearBlack);
                         transition: color .3s;
 
                         &:before {
