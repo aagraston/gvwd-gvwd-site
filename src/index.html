@@ -19,7 +19,7 @@ eleventyNavigation:
 <section id="hero">
   <div class="container">
     <div class="hero-section-left">
-      <h1>GOOD VALLEY WEB DESIGNS</h1>
+      <h1 class="h2-heading">GOOD VALLEY WEB DESIGNS</h1>
       <h2>
         BEAUTIFUL, HIGHLY PERFORMANT WEBSITES FOR <span>SMALL BUSINESSES</span>
       </h2>
@@ -55,10 +55,14 @@ eleventyNavigation:
       850px) 850px, 1920px'%}
     </div>
   </div>
-
   <!-- Background Image -->
-  {% image './src/images/gvwd/hero-bg-pic.png', 'mountains', 'cs-picture',
-  'eager', '(max-width: 400px) 400px, (max-width: 850px) 850px, 1920px'%}
+  <div class="circle-bg">
+    {% image './src/images/gvwd/hero-bg-pic.png', 'background image of the
+    okanagan valley', 'hero-bg-img', 'eager', '(max-width: 400px) 800px,
+    (max-width: 850px) 850px, 1920px'%}
+  </div>
+
+  
 </section>
 
 <!-- ============================================ -->
@@ -68,6 +72,126 @@ eleventyNavigation:
 <section id="highlight-scroll">
   <div class="container">
     <div class="scroll-container">
+      <div class="scroll-element">
+        <img
+          class="scroll-icon"
+          loading="lazy"
+          decoding="async"
+          src="/assets/svgs/sun-icon.svg"
+          alt="sun icon"
+          aria-hidden="true"
+        />
+        <p>Mobile First Design</p>
+      </div>
+
+      <div class="scroll-element">
+        <img
+          class="scroll-icon"
+          loading="lazy"
+          decoding="async"
+          src="/assets/svgs/sun-icon.svg"
+          alt="sun icon"
+          aria-hidden="true"
+        />
+        <p>Fully Responsive</p>
+      </div>
+
+      <div class="scroll-element">
+        <img
+          class="scroll-icon"
+          loading="lazy"
+          decoding="async"
+          src="/assets/svgs/sun-icon.svg"
+          alt="sun icon"
+          aria-hidden="true"
+        />
+        <p>Optimized Page Speed</p>
+      </div>
+
+      <div class="scroll-element">
+        <img
+          class="scroll-icon"
+          loading="lazy"
+          decoding="async"
+          src="/assets/svgs/sun-icon.svg"
+          alt="sun icon"
+          aria-hidden="true"
+        />
+        <p>Reporting & Analytics</p>
+      </div>
+
+      <div class="scroll-element">
+        <img
+          class="scroll-icon"
+          loading="lazy"
+          decoding="async"
+          src="/assets/svgs/sun-icon.svg"
+          alt="sun icon"
+          aria-hidden="true"
+        />
+        <p>Based in Canada</p>
+      </div>
+
+      <div class="scroll-element">
+        <img
+          class="scroll-icon"
+          loading="lazy"
+          decoding="async"
+          src="/assets/svgs/sun-icon.svg"
+          alt="sun icon"
+          aria-hidden="true"
+        />
+        <p>Mobile First Design</p>
+      </div>
+
+      <div class="scroll-element">
+        <img
+          class="scroll-icon"
+          loading="lazy"
+          decoding="async"
+          src="/assets/svgs/sun-icon.svg"
+          alt="sun icon"
+          aria-hidden="true"
+        />
+        <p>Fully Responsive</p>
+      </div>
+
+      <div class="scroll-element">
+        <img
+          class="scroll-icon"
+          loading="lazy"
+          decoding="async"
+          src="/assets/svgs/sun-icon.svg"
+          alt="sun icon"
+          aria-hidden="true"
+        />
+        <p>Optimized Page Speed</p>
+      </div>
+
+      <div class="scroll-element">
+        <img
+          class="scroll-icon"
+          loading="lazy"
+          decoding="async"
+          src="/assets/svgs/sun-icon.svg"
+          alt="sun icon"
+          aria-hidden="true"
+        />
+        <p>Reporting & Analytics</p>
+      </div>
+
+      <div class="scroll-element">
+        <img
+          class="scroll-icon"
+          loading="lazy"
+          decoding="async"
+          src="/assets/svgs/sun-icon.svg"
+          alt="sun icon"
+          aria-hidden="true"
+        />
+        <p>Based in Canada</p>
+      </div>
+
       <div class="scroll-element">
         <img
           class="scroll-icon"
@@ -137,8 +261,8 @@ eleventyNavigation:
 
 <section id="what-we-offer">
   <div class="container">
-    <h2>WHAT WE OFFER</h2>
-    <h3>ONGOING CARE AND SUPPORT</h3>
+    <h2 class="h2-heading">WHAT WE OFFER</h2>
+    <h3 class="h3-heading">ONGOING CARE AND SUPPORT</h3>
     <p>
       At Good Valley, we believe a great website shouldn’t be left to fall apart
       over time. Your website is <strong>NO COST DOWN</strong>, and we stick
@@ -163,8 +287,8 @@ eleventyNavigation:
           You get a fast, secure, professional site tailored to your business —
           no hidden fees.
         </p>
-        <a href="/contact"
-          >Get Started
+        <a href="/services" class="button-outline"
+          >Learn More
           <img
             class="arrow-icon"
             loading="lazy"
@@ -190,8 +314,8 @@ eleventyNavigation:
           and security. Everything is monitored and optimized so your website
           stays fast, safe, and worry-free.
         </p>
-        <a href="/contact"
-          >Get Started
+        <a href="/services" class="button-outline"
+          >Learn More
           <img
             class="arrow-icon"
             loading="lazy"
@@ -217,8 +341,8 @@ eleventyNavigation:
           let us know. We handle updates and maintenance so your site always
           looks fresh and works flawlessly.
         </p>
-        <a href="/contact"
-          >Get Started
+        <a href="/services" class="button-outline"
+          >Learn More
           <img
             class="arrow-icon"
             loading="lazy"
@@ -250,8 +374,8 @@ eleventyNavigation:
   <div class="container">
     <div class="top-section">
       <div class="left-side">
-        <h2>EXAMPLES</h2>
-        <h3>HAVE A POKE AROUND THESE SITE EXAMPLES</h3>
+        <h2 class="h2-heading">EXAMPLES</h2>
+        <h3 class="h3-heading">HAVE A POKE AROUND THESE SITE EXAMPLES</h3>
       </div>
       <div class="right-side">
         <p>
@@ -287,11 +411,12 @@ eleventyNavigation:
           href="https://ecolandscaping.netlify.app"
           target="_blank"
           rel="noopener noreferrer"
+          class="button-outline"
           >Visit Site<img
             class="arrow-icon"
             loading="lazy"
             decoding="async"
-            src="/assets/svgs/right-arrow-icon-white.svg"
+            src="/assets/svgs/right-arrow-icon-black.svg"
             alt="right arrow icon"
             aria-hidden="true"
         /></a>
@@ -311,11 +436,12 @@ eleventyNavigation:
           href="https://ecolandscaping.netlify.app"
           target="_blank"
           rel="noopener noreferrer"
+          class="button-outline"
           >Visit Site<img
             class="arrow-icon"
             loading="lazy"
             decoding="async"
-            src="/assets/svgs/right-arrow-icon-white.svg"
+            src="/assets/svgs/right-arrow-icon-black.svg"
             alt="right arrow icon"
             aria-hidden="true"
         /></a>
@@ -330,8 +456,8 @@ eleventyNavigation:
 
 <section id="built-to-last">
   <div class="container">
-    <h2>SMALL SITES WITH BIG IMPACT</h2>
-    <h3>BUILT TO LAST, MADE TO CONVERT</h3>
+    <h2 class="h2-heading">SMALL SITES WITH BIG IMPACT</h2>
+    <h3 class="h3-heading">BUILT TO LAST, MADE TO CONVERT</h3>
     <div class="built-to-last-grid">
       <div class="card">
         <img
@@ -342,8 +468,10 @@ eleventyNavigation:
           alt="partnership icon"
           aria-hidden="true"
         />
-        <h4>Partnership</h4>
-        <p>We stick with you long-term, keeping your site in top shape.</p>
+        <div class="card-text">
+          <h4>Partnership</h4>
+          <p>We stick with you long-term, keeping your site in top shape.</p>
+        </div>
       </div>
 
       <div class="card">
@@ -355,8 +483,10 @@ eleventyNavigation:
           alt="growth icon"
           aria-hidden="true"
         />
+        <div class="card-text">
         <h4>Growth</h4>
         <p>A fast, professional site that helps your business thrive.</p>
+        </div>
       </div>
 
       <div class="card">
@@ -368,8 +498,10 @@ eleventyNavigation:
           alt="quality icon"
           aria-hidden="true"
         />
+        <div class="card-text">
         <h4>Quality</h4>
         <p>Beautiful designs, clean, efficient code with no bloat.</p>
+        </div>
       </div>
 
       <div class="card">
@@ -381,20 +513,25 @@ eleventyNavigation:
           alt="performance icon"
           aria-hidden="true"
         />
+        <div class="card-text">
         <h4>Performance</h4>
         <p>Your site loads in a blink, every time.</p>
+        </div>
       </div>
     </div>
-    <a href="/contact" class="button-outline">
+    <a href="/contact" class="button-outline yellow">
       Get Started<img
         class="arrow-icon"
         loading="lazy"
         decoding="async"
-        src="/assets/svgs/right-arrow-icon-black.svg"
+        src="/assets/svgs/right-arrow-icon-yellow.svg"
         alt="right arrow icon"
         aria-hidden="true"
     /></a>
   </div>
+  {% image './src/images/gvwd/built-to-last-img.png', 'background image of the
+    okanagan valley', 'hero-bg-img', 'eager', '(max-width: 400px) 800px,
+    (max-width: 850px) 850px, 1920px'%}
 </section>
 
 <!-- ============================================ -->
