@@ -599,9 +599,9 @@
 
 /* Small Desktop */
 @media only screen and (min-width: 64em) {
-    #built-to-last {
+  #built-to-last {
     .container {
-        max-width: calc(1280 / 16 * 1rem);
+      max-width: calc(1280 / 16 * 1rem);
       .built-to-last-grid {
         flex-direction: row;
         align-items: stretch;
@@ -642,6 +642,292 @@
       }
     }
   }
+}
+
+/* Desktop */
+@media only screen and (min-width: 75em) {
+}
+
+/*-- -------------------------- -->
+<---          Pricing           -->
+<--- -------------------------- -*/
+
+/* Mobile */
+@media only screen and (min-width: 0em) {
+  #pricing {
+    .container {
+      .top-section {
+        margin-top: calc(80 / 16 * 1rem);
+      }
+      h3 {
+        max-width: calc(600 / 16 * 1rem);
+        margin-right: auto;
+        margin-left: auto;
+      }
+      .right-side {
+        p {
+          text-align: center;
+          max-width: calc(800 / 16 * 1rem);
+          margin-right: auto;
+          margin-left: auto;
+        }
+      }
+
+      .bottom-section {
+        .pricing-grid {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          margin-top: calc(40 / 16 * 1rem);
+          margin-bottom: calc(80 / 16 * 1rem);
+          margin-right: auto;
+          margin-left: auto;
+          gap: calc(20 / 16 * 1rem);
+          .card {
+            padding: calc(40 / 16 * 1rem);
+            border-radius: calc(8 / 16 * 1rem);
+            ul {
+              list-style: none;
+              display: flex;
+              flex-direction: column;
+              gap: calc(10 / 16 * 1rem);
+              margin-top: calc(20 / 16 * 1rem);
+              margin-bottom: calc(40 / 16 * 1rem);
+
+              .feature-item {
+                position: relative;
+                padding-left: 1.75rem; /* space for the icon */
+                font-family: "Sofia Sans", sans-serif;
+                line-height: 1.4;
+
+                &::before {
+                  content: ""; /* required to render the pseudo-element */
+                  position: absolute;
+                  left: 0;
+                  top: calc(12 / 16 * 1rem);
+                  transform: translateY(-50%);
+                  width: 1.2rem;
+                  height: 1.2rem;
+                  background: url("/assets/svgs/no-sign-icon-dark.svg")
+                    no-repeat center / contain;
+                  margin-right: calc(5 / 16 * 1rem);
+                }
+
+                &.included::before {
+                  background: url("/assets/svgs/blue-check-icon.svg") no-repeat
+                    center / contain; /* the checkmark */
+                }
+              }
+            }
+            h4 {
+              font-family: "Sofia Sans", sans-serif;
+              font-weight: 900;
+              font-size: calc(28 / 16 * 1rem);
+              margin-bottom: calc(40 / 16 * 1rem);
+            }
+            h5 {
+              font-family: "Sofia Sans", sans-serif;
+              font-weight: 600;
+              font-size: calc(32 / 16 * 1rem);
+              opacity: 0.8;
+              span {
+                font-weight: 400;
+                font-size: calc(16 / 16 * 1rem);
+              }
+            }
+            &:nth-child(1) {
+              background-color: var(--offWhite);
+            }
+            &:nth-child(2) {
+              background-color: var(--primaryDark);
+              h4 {
+                color: var(--primaryLight);
+              }
+              h5 {
+                color: var(--primaryLight);
+              }
+              ul {
+                .feature-item {
+                  color: var(--primaryLight);
+                  &::before {
+                    background: url("/assets/svgs/no-sign-icon-light.svg")
+                      no-repeat center / contain;
+                  }
+
+                  &.included::before {
+                    background: url("/assets/svgs/blue-check-icon.svg")
+                      no-repeat center / contain; /* the checkmark */
+                  }
+                }
+              }
+            }
+            &:nth-child(3) {
+              border: 1px solid var(--primaryDark);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Tablet */
+@media only screen and (min-width: 48em) {
+}
+
+/* Small Desktop */
+@media only screen and (min-width: 64em) {
+  #pricing {
+    .container {
+      max-width: calc(1280 / 16 * 1rem);
+      .top-section {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: space-between;
+
+        .left-side {
+          max-width: calc(640 / 16 * 1rem);
+          flex: 1;
+          h2,
+          h3 {
+            text-align: left;
+            margin: 0;
+          }
+        }
+
+        .right-side {
+          max-width: calc(640 / 16 * 1rem);
+          flex: 1;
+          p {
+            text-align: left;
+            margin-top: calc(40 / 16 * 1rem);
+            margin-bottom: calc(20 / 16 * 1rem);
+          }
+          a {
+            display: block;
+            width: max-content;
+            margin-left: 0;
+          }
+        }
+        margin-bottom: calc(40 / 16 * 1rem);
+      }
+      .bottom-section {
+        .pricing-grid {
+            flex-direction: row;
+            align-items: stretch;
+            .card {
+                flex: 1;
+            }
+        }
+      }
+    }
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 75em) {
+}
+
+
+/*-- -------------------------- -->
+<---       Meet The Owner       -->
+<--- -------------------------- -*/
+
+/* Mobile */
+@media only screen and (min-width: 0em) {
+    #meet-the-owner {
+    background-color: var(--offWhite);
+        .container {
+            padding-top: calc(80 / 16 * 1rem);
+            padding-bottom: calc(80 / 16 * 1rem);
+            .left-side {
+                width: calc(280 / 16 * 1rem);
+                margin-right: auto;
+                margin-left: auto;
+                margin-bottom: calc(40 / 16 * 1rem);
+                picture {
+                    display: block;
+                    width: 100%;
+                    
+                    img {
+                        width: 100%;
+                        height: auto;
+                        object-fit: cover;
+                        object-position: center;
+                        display: block;
+                    }
+                }
+                h3 {
+                    text-align: center;
+                    background-color: var(--primaryDark);
+                    color: var(--primaryLight);
+                    font-weight: 800;
+                    font-size: calc(18 / 16 * 1rem);
+                    font-family: 'Sofia Sans', sans-serif;
+                    padding-top: calc(5 / 16 * 1rem);
+                    padding-bottom: calc(5 / 16 * 1rem);
+                }
+                h4 {
+                    text-align: center;
+                    font-weight: 700;
+                    font-size: calc(14 / 16 * 1rem);
+                    font-family: 'Sofia Sans', sans-serif;
+                    padding-top: calc(5 / 16 * 1rem);
+                    padding-bottom: calc(5 / 16 * 1rem);
+                }
+            }
+            .right-side {
+                h4 {
+                    text-align: center;
+                    
+                }
+                .stats-grid {
+                    display: flex;
+                    flex-direction: column;
+                    gap: calc(40 / 16 * 1rem);
+                    align-items: center;
+                    margin-bottom: calc(20 / 16 * 1rem);
+
+                    .stat-item {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        gap: calc(10 / 16 * 1rem);
+                        img {
+                            width: calc(80 / 16 * 1rem);
+                        }
+                        .stat-text {
+                            h6 {
+                                font-family: 'Sofia Sans', sans-serif;
+                                font-weight: 800;
+                                font-size: calc(50 / 16 * 1rem);
+                                text-align: center;
+                            }
+                            p {
+                                text-align: center;
+                            }
+
+                        }
+                    }
+                }
+                p {
+                    text-align: center;
+                }
+            }
+
+
+        }
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 48em) {
+}
+
+/* Small Desktop */
+@media only screen and (min-width: 64em) {
 }
 
 /* Desktop */
